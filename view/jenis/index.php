@@ -33,7 +33,7 @@
 <body>
     <div class="container">
         <h1>Xhit Market</h1>
-        <a class="btn btn-primary" href="view_tambah.php" role="button">Penambahan Jenis</a>
+        <a class="btn btn-primary" href="view_tambah.php" role="button"><i class="fa-solid fa-plus"></i> Penambahan Jenis</a>
         <br></br>
         <table class="table table-dark table-striped-columns">
   <thead>
