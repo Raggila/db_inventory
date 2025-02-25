@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Xhit Market</a>
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-plus"></i> Xhit Market</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,8 +55,8 @@
                             <td><?php echo $result['id_jenis'];?></td>
                             <td><?php echo $result['nama_jenis'];?></td>
                             <td>
-                            <a href="view_edit.php?id_jenis=<?php echo $result['id_jenis']?>" type="button" class="btn btn-info">Edit</a>
-                            <a href="proses_delete.php?id_jenis=<?php echo $result['id_jenis']?>" onclick="return confirm('kamu yakin?')" type="button" class="btn btn-warning">Delete</a>
+                            <a class="btn btn-info" href="view_edit.php?id_jenis=<?php echo $result['id_jenis']?>"><i class="fa-solid fa-pen-nib"></i> Edit</a>
+                            <a class="btn btn-warning" href="proses_delete.php?id_jenis=<?php echo $result['id_jenis']?>" onclick="return confirm('kamu yakin?')"><i class="fa-solid fa-eraser"></i> Delete</a>
                             </td>
                         </tr>
                     <?php

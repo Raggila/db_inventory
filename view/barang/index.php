@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Xhit Market</a>
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i> Xhit Market</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +33,7 @@
 <body>
     <div class="container">
         <h1>Xhit Market</h1>
-        <a class="btn btn-primary" href="view_tambah.php" role="button">Penambahan Barang</a>
+        <a class="btn btn-primary" href="view_tambah.php" role="button"><i class="fa-solid fa-plus"></i> Penambahan Barang</a>
         <br></br>
         <table class="table table-dark table-striped-columns">
   <thead>
@@ -61,8 +61,8 @@
                             <td><?php echo $result['harga'];?></td>
                             <td><?php echo $result['nama_barang'];?></td>
                             <td>
-                            <a class="btn btn-info" href="view_edit.php?id_barang=<?php echo $result['id_barang']?>"><i class="fa-solid fa-pen-nib"></i>Edit</a>
-                            <a class="btn btn-warning" href="proses_delete.php?id_barang=<?php echo $result['id_barang']?>" onclick="return confirm('kamu yakin?')">Delete</a>
+                            <a class="btn btn-info" href="view_edit.php?id_barang=<?php echo $result['id_barang']?>"><i class="fa-solid fa-pen-nib"></i> Edit</a>
+                            <a class="btn btn-warning" href="proses_delete.php?id_barang=<?php echo $result['id_barang']?>" onclick="return confirm('kamu yakin?')"><i class="fa-solid fa-eraser"></i> Delete</a>
                             </td>
                         </tr>
                     <?php
